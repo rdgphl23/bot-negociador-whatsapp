@@ -371,7 +371,7 @@ Este projeto utiliza uma biblioteca **não oficial** do WhatsApp. O uso desta bi
 
 Desenvolvido como parte de um desafio técnico.
 
-**Repositório:** https://github.com/seu-usuario/whatsapp-bot-negociador
+**Repositório:** https://github.com/rdgphl23/whatsapp-bot-negociador
 
 ## 📧 Contato
 
