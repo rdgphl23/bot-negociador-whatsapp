@@ -12,7 +12,7 @@ git clone https://github.com/seu-usuario/whatsapp-bot-negociador.git
 cd whatsapp-bot-negociador
 
 # Adicione o repositório original como upstream
-git remote add upstream https://github.com/usuario-original/whatsapp-bot-negociador.git
+git remote add upstream https://github.com/rdgphl23/bot-negociador-whatsapp/.git
 ```
 
 ### 2. Crie uma Branch
@@ -170,7 +170,7 @@ src/
 
 ## 💬 Dúvidas?
 
-- Abra uma [issue](https://github.com/usuario/repo/issues) para discussão
+- Abra uma [issue](https://github.com/rdgphl23/repo/issues) para discussão
 - Pergunte no PR
 - Entre em contato com os mantenedores
 
