@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+
+# Sessão do WhatsApp - CRÍTICO: Nunca commitar!
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Variáveis de ambiente
+.env
+
+# Logs
+*.log
+logs/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporários
+tmp/
+temp/
+
