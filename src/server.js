@@ -6,16 +6,35 @@ const basicAuth = require('express-basic-auth');
 const path = require('path');
 const WhatsAppBot = require('./bot/whatsapp-bot');
 
+const requiredEnv = ['PORT', 'DASHBOARD_USER', 'DASHBOARD_PASSWORD'];
+const missingEnv = requiredEnv.filter((key) => !process.env[key]);
+
+if (missingEnv.length > 0) {
+  console.error(
+    `Variáveis de ambiente ausentes: ${missingEnv.join(', ')}. ` +
+    'Verifique o arquivo .env ou as configurações do sistema.'
+  );
+  process.exit(1);
+}
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT);
+
+if (!Number.isInteger(PORT) || PORT <= 0) {
+  console.error(
+    'A variável de ambiente PORT deve ser um número inteiro positivo. ' +
+    `Valor recebido: ${process.env.PORT}`
+  );
+  process.exit(1);
+}
 
 // Middleware para autenticação básica
 const authMiddleware = basicAuth({
-  users: { 
-    [process.env.DASHBOARD_USER || 'admin']: process.env.DASHBOARD_PASSWORD || 'admin123' 
+  users: {
+    [process.env.DASHBOARD_USER]: process.env.DASHBOARD_PASSWORD
   },
   challenge: true,
   realm: 'WhatsApp Bot Dashboard'
@@ -77,9 +96,9 @@ server.listen(PORT, () => {
 ║                                                           ║
 ║       Servidor rodando em: http://localhost:${PORT}       ║
 ║                                                           ║
-║       Credenciais padrão:                                 ║
-║       Usuário: ${process.env.DASHBOARD_USER || 'admin'}                                       ║
-║       Senha: ${process.env.DASHBOARD_PASSWORD || 'admin123'}                                    ║
+║       Credenciais configuradas via .env                   ║
+║       Usuário: (definido no .env)                         ║
+║       Senha: ********                                     ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
   `);

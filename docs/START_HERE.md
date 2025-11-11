@@ -10,13 +10,19 @@ Olá! Este é o **WhatsApp Bot Negociador** desenvolvido para o desafio técnico
 # 1. Instalar dependências
 npm install
 
-# 2. Iniciar servidor
+# 2. Configurar variáveis de ambiente
+cp .env.example .env
+# Edite o arquivo .env:
+# PORT=3000
+# DASHBOARD_USER=seu_usuario
+# DASHBOARD_PASSWORD=sua_senha_forte
+
+# 3. Iniciar servidor
 npm start
 
-# 3. Acessar dashboard
-# http://localhost:3000
-# Usuário: admin
-# Senha: admin123
+# 4. Acessar dashboard
+# URL: http://localhost:3000 (ou a porta definida no .env)
+# Credenciais: conforme definidas no .env
 ```
 
 **Pronto!** O QR Code aparecerá no dashboard. Escaneie com seu WhatsApp e teste.
@@ -114,7 +120,7 @@ Bot: (mostra comandos)
 ### 3. Verifique Segurança
 - `.env` não está commitado
 - `.wwebjs_auth/` não está commitado
-- Números são sanitizados (****4321)
+- Números são sanitizados (ex.: +55 (11) ****-**21)
 - Dashboard requer autenticação
 
 ---
@@ -237,7 +243,7 @@ Retorna status da conexão
 ```json
 {
   "status": "ready",
-  "timestamp": "2024-11-10T12:00:00.000Z"
+  "timestamp": "2025-11-11T12:00:00.000Z"
 }
 ```
 
@@ -343,7 +349,7 @@ Tudo organizado para facilitar sua avaliação:
 ## 🎓 Contato
 
 **Desenvolvido para o desafio técnico**  
-**Prazo:** 14/11/2024  
+**Prazo:** 14/11/2025  
 **Status:** ✅ Completo
 
 **Bom trabalho na avaliação!** 🚀

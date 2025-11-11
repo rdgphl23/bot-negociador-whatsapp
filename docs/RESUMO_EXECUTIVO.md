@@ -96,9 +96,9 @@ whatsapp-bot-negociador/
 ## 🚀 Como Executar (3 comandos)
 
 ```bash
-npm run setup    # Configura ambiente
+npm run setup    # Configura ambiente (inclui .env a partir do .env.example)
 npm start        # Inicia servidor
-# Acesse: http://localhost:3000 (admin/admin123)
+# Acesse: http://localhost:3000 (use as credenciais do .env)
 ```
 
 ## 🔄 Fluxo de Uso
@@ -314,8 +314,8 @@ Esta solução não apenas atende todos os requisitos do desafio, mas vai além 
 ## 📞 Informações de Entrega
 
 **Repositório:** [Pronto para compartilhar](https://github.com/rdgphl23/whatsapp-bot-negociador)  
-**Data de Conclusão:** 10/11/2024  
-**Prazo:** 14/11/2024  
+**Data de Conclusão:** 11/11/2025  
+**Prazo:** 14/11/2025  
 **Status:** ✅ Completo e pronto para avaliação
 
 ---

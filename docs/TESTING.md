@@ -214,7 +214,7 @@ Por favor, digite "olá" para iniciar o atendimento.
 
 ### 2. Login com Credenciais Corretas
 
-**Teste:** Usar admin / admin123
+**Teste:** Usar as credenciais definidas no `.env`
 
 **Esperado:** Acesso ao dashboard
 
@@ -269,7 +269,7 @@ Por favor, digite "olá" para iniciar o atendimento.
 
 **Teste:** Verificar números nos logs do dashboard
 
-**Esperado:** Números aparecem como `+5511****4321`
+**Esperado:** Números aparecem como `+55 (11) ****-**21`
 
 **Status:** ✅ Passou | ❌ Falhou
 

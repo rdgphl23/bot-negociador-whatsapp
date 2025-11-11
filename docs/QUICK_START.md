@@ -9,10 +9,11 @@ cd whatsapp-bot-negociador
 npm install
 ```
 
-### 2. Configure (opcional)
+### 2. Configure variáveis de ambiente
 ```bash
-# Copie o .env.example para .env e edite se desejar
+# Copie o .env.example para .env e personalize os valores
 cp .env.example .env
+# Edite o arquivo .env com usuário, senha e porta desejados
 ```
 
 ### 3. Inicie
@@ -25,7 +26,7 @@ npm start
 http://localhost:3000
 ```
 
-**Credenciais:** admin / admin123
+**Credenciais:** use os valores definidos no `.env`
 
 ### 5. Conecte seu WhatsApp
 - Escaneie o QR Code que aparece

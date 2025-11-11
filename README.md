@@ -101,9 +101,9 @@ Abra seu navegador e acesse:
 http://localhost:3000
 ```
 
-Credenciais padrão:
-- **Usuário**: admin
-- **Senha**: admin123 (ou a que você configurou no `.env`)
+Credenciais:
+- **Usuário**: valor de `DASHBOARD_USER` no `.env`
+- **Senha**: valor de `DASHBOARD_PASSWORD` no `.env`
 
 ### 6. Autentique seu WhatsApp
 
@@ -131,7 +131,7 @@ Retorna o status atual da conexão do bot.
 ```json
 {
   "status": "ready",
-  "timestamp": "2024-11-10T12:00:00.000Z"
+  "timestamp": "2025-11-11T12:00:00.000Z"
 }
 ```
 
@@ -226,7 +226,7 @@ Em uma implementação completa, aqui seria gerado:
 
 #### 3. Sanitização de Dados
 - Números de telefone são sanitizados nos logs
-- Exemplo: `+5511987654321` → `+5511****4321`
+- Exemplo: `+5511987654321` → `+55 (11) ****-**21`
 - Implementado em `src/bot/whatsapp-bot.js`
 
 #### 4. Autenticação do Dashboard

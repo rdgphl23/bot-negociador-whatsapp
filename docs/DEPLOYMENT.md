@@ -75,10 +75,9 @@ services:
     build: .
     ports:
       - "3000:3000"
+    env_file:
+      - .env
     environment:
-      - PORT=3000
-      - DASHBOARD_USER=${DASHBOARD_USER:-admin}
-      - DASHBOARD_PASSWORD=${DASHBOARD_PASSWORD:-admin123}
       - NODE_ENV=production
     volumes:
       # Persistir sessão do WhatsApp
@@ -139,8 +138,8 @@ heroku login
 heroku create seu-bot-negociador
 
 # Configurar variáveis de ambiente
-heroku config:set DASHBOARD_USER=admin
-heroku config:set DASHBOARD_PASSWORD=sua_senha_segura
+heroku config:set DASHBOARD_USER=seu_usuario
+heroku config:set DASHBOARD_PASSWORD=uma_senha_muito_segura
 heroku config:set NODE_ENV=production
 
 # Deploy
@@ -174,8 +173,8 @@ railway init
 railway up
 
 # Configurar variáveis
-railway variables set DASHBOARD_USER=admin
-railway variables set DASHBOARD_PASSWORD=sua_senha
+railway variables set DASHBOARD_USER=seu_usuario
+railway variables set DASHBOARD_PASSWORD=uma_senha_muito_segura
 ```
 
 ### Deploy via GitHub
@@ -205,7 +204,7 @@ services:
     startCommand: npm start
     envVars:
       - key: DASHBOARD_USER
-        value: admin
+        value: seu_usuario
       - key: DASHBOARD_PASSWORD
         generateValue: true
       - key: NODE_ENV

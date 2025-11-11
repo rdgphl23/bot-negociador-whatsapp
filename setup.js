@@ -157,11 +157,11 @@ function showFinalInstructions() {
    npm start
    
 2️⃣  Acesse o dashboard:
-   http://localhost:3000
+   http://localhost:3000 (ou a porta definida no .env)
    
-3️⃣  Credenciais padrão:
-   Usuário: admin
-   Senha: admin123
+3️⃣  Credenciais:
+   Usuário: valor de DASHBOARD_USER no .env
+   Senha : valor de DASHBOARD_PASSWORD no .env
    
 4️⃣  Escaneie o QR Code com seu WhatsApp
 
