@@ -8,11 +8,11 @@ Obrigado por considerar contribuir com o WhatsApp Bot Negociador! 🎉
 
 ```bash
 # Clone seu fork
-git clone https://github.com/seu-usuario/whatsapp-bot-negociador.git
+git clone https://github.com/rdgphl23/bot-negociador-whatsapp.git
 cd whatsapp-bot-negociador
 
 # Adicione o repositório original como upstream
-git remote add upstream https://github.com/rdgphl23/bot-negociador-whatsapp/.git
+git remote add upstream https://github.com/rdgphl23/bot-negociador-whatsapp.git
 ```
 
 ### 2. Crie uma Branch
