@@ -313,7 +313,7 @@ Esta solução não apenas atende todos os requisitos do desafio, mas vai além 
 
 ## 📞 Informações de Entrega
 
-**Repositório:** [Pronto para compartilhar](https://github.com/rdgphl23/whatsapp-bot-negociador)  
+**Repositório:** [Pronto para compartilhar](https://github.com/rdgphl23/bot-negociador-whatsapp)  
 **Data de Conclusão:** 11/11/2025  
 **Prazo:** 14/11/2025  
 **Status:** ✅ Completo e pronto para avaliação
